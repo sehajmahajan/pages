@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 10px;
+    background: #626cd6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactContainer {
+    max-width: 70%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contactContainer .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.contactContainer .content .contactInfo {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 20px;
+    position: relative;
+}
+
+.contactContainer .content .contactInfo::before {
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+}
+
+.contactContainer .content .contactInfo .address,
+.phone,
+.email {
+    margin: 14px;
+    text-align: center;
+}
+
+.contactContainer .content .contactInfo .address img {
+    max-width: 30px;
+    margin-bottom: 10px
+}
+
+.contactContainer .content .contactInfo .phone img {
+    max-width: 30px;
+    margin-bottom: 10px
+}
+
+.contactContainer .content .contactInfo .email img {
+    max-width: 30px;
+    margin-bottom: 10px
+}
+
+.contactContainer .content .message {
+    width: 75%;
+    /* margin-left: 75px; */
+}
+
+.contactContainer .content .message h1 {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.contactContainer .content .message form .inputField {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.contactContainer .content .message form .inputField input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.contactContainer .content .message form .inputField textarea {
+    padding-top: 6px;
+}
+
+.contactContainer .content .message form .messageField {
+    min-height: 110px;
+}
+
+.contactContainer .content .message form .button {
+    display: inline-block;
+    margin-top: 12px;
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contactContainer .content .message form .button:hover {
+    background: #5029bc;
+}
+
+
+@media (max-width: 480px) {
+    .contactContainer {
+        margin: 40px 0;
+        height: 100%;
+    }
+
+    .contactContainer .content {
+        flex-direction: column-reverse;
+    }
+
+    .contactContainer .content .contactInfo {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contactContainer .content .contactInfo::before {
+        display: none;
+    }
+
+    .contactContainer .content .message {
+        width: 100%;
+        margin-left: 0;
+    }
+}
