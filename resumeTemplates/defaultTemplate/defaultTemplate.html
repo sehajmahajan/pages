@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="defaultTemplate.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><i class="fa-regular fa-file"></i> ProFile<span>X</span></div>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <select id="select-grp">
+                    <option>Tools</option>
+                    <option>Cover Letter Builder</option>
+                    <option>Resume Templates</option>
+                    <option>Career Growth</option>
+                    <option>Blogs</option>
+                    <option>ATS Friendly Resumes</option>
+                    <option>Resume Checker</option>
+                    <option>Resume Skills</option>
+                </select>
+                <a href="pricing.html">Pricing</a>
+                <a href="about.html">About Us</a>
+                <a href="#" id="cv-btn">Contact Us</a>
+                <a href="login.html" id="login">Log in</a>
+            </div>
+        </nav>
+    </header>
+
+    <form action="#">
+        <div class="container">
+            <div class="inputPersonalDetails">
+                <div class="inputName">
+                    <input type="text" id="name" placeholder="Your Name">
+                </div>
+                <div class="inputRole">
+                    <input type="text" id="role" placeholder="The role you are applying for">
+                </div>
+                <div class="inputContactDetails">
+                    <div class="phone">
+                        <input type="tel" id="phone" placeholder="Phone">
+                    </div>
+                    <span class="dot"></span>
+                    <div class="email">
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                    <span class="dot"></span>
+                    <div class="socialUrl">
+                        <input type="url" id="socialUrl" placeholder="Linkedin">
+                    </div>
+                    <span class="dot"></span>
+                    <div class="location">
+                        <input type="text" id="location" placeholder="Location">
+                    </div>
+                </div>
+            </div>
+            <!-- summary -->
+            <div class="summary">
+                <h1 class="alignHeadingCenter">Summary</h1>
+                <div class="line"></div>
+                <div class="inputSummary">
+                    <input type="text" id="summary" placeholder="Briefly explain why you are a great fit for the role.">
+                </div>
+            </div>
+            <!-- experience -->
+            <div class="experience">
+                <h1 class="alignHeadingCenter">Experience</h1>
+                <span class="extraInput"><img class="add experienceAdd" src="/images/add.png" alt="Add button"><img class="delete experienceDelete" src="/images/trash.png" alt="Delete button"></span>
+                <span class="line"></span>
+                <div class="inputExperience">
+                    <div class="column">
+                        <div class="row">
+                            <input type="text" id="comanyName" placeholder="Company Name">
+                            <input type="text" id="location" placeholder="Location">
+                        </div>
+                        <div class="row">
+                            <input type="text" id="companytitle" placeholder="Title">
+                            <input type="text" id="experienceTimePeriod" placeholder="Time Period">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- education -->
+            <div class="education">
+                <h1 class="alignHeadingCenter">Education</h1>
+                <span class="extraInput"><img class="add" src="/images/add.png" alt="Add button"><img class="delete" src="/images/trash.png" alt="Delete button"></span>
+                <span class="line"></span>
+                <div class="inputEducation">
+                    <div class="column">
+                        <div class="row">
+                            <input type="text" id="institution" placeholder="School or University">
+                        </div>
+                        <div class="row">
+                            <input type="text" id="degree" placeholder="Field of study">
+                            <input type="num" id="studytimeperiod" placeholder="Completion year">
+                        </div>
+                    </div>
+                </div>
+                <!-- project -->
+                <div class="project">
+                    <h1 class="alignHeadingCenter">Project</h1>
+                    <span class="extraInput"><img class="add" src="/images/add.png" alt="Add button"><img class="delete" src="/images/trash.png" alt="Delete button"></span>
+                    <span class="line"></span>
+                    <div class="inputProject column">
+                        <input type="text" id="projectTitle" placeholder="Title">
+                        <input type="text" id="projectSummary" placeholder="Description of project">
+                    </div>
+                </div>
+                <!-- achievements -->
+                <div class="achievements">
+                    <h1 class="alignHeadingCenter">Achievements and Certificates</h1>
+                    <span class="extraInput"><img class="add" src="/images/add.png" alt="Add button"><img class="delete" src="/images/trash.png" alt="Delete button"></span>
+                    <span class="line"></span>
+                    <div class="inputAchievements">
+                        <div class="column">
+                            <div class="row">
+                                <input type="text" id="achievementTitle" placeholder="Your Achievement">
+                                <input type="num" id="achievementDate" placeholder="Year acquired">
+                            </div>
+                            <div class="row">
+                                <input type="text" id="achievementSummary"
+                                    placeholder="Describe what you did and impact it had.">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- skills -->
+                <div class="skills">
+                    <h1 class="alignHeadingCenter">Skills</h1>
+                    <span class="extraInput"><img class="add" src="/images/add.png" alt="Add button"><img class="delete" src="/images/trash.png" alt="Delete button"></span>
+                    <span class="line"></span>
+                    <div class="inputSkills">
+                        <input type="text" id="skills" placeholder="Your Skills">
+                    </div>
+                </div>
+                <!-- submit or Clear -->
+                 <div class="submitBtn">
+                     <input class="clear" type="reset" value="Clear" >
+                    <input class="submit" type="submit" value="Submit">
+                 </div>
+            </div>
+        </div>
+    </form>
+<script src="defaultTemplate.js"></script>
+</body>
+
+</html>

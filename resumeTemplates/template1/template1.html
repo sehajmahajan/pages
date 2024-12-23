@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="template1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=add_a_photo" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo"><i class="fa-regular fa-file"></i> ProFile<span>X</span></div>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <select id="select-grp">
+                    <option>Tools</option>
+                    <option>Cover Letter Builder</option>
+                    <option>Resume Templates</option>
+                    <option>Career Growth</option>
+                    <option>Blogs</option>
+                    <option>ATS Friendly Resumes</option>
+                    <option>Resume Checker</option>
+                    <option>Resume Skills</option>
+                </select>
+                <a href="pricing.html">Pricing</a>
+                <a href="about.html">About Us</a>
+                <a href="#" id="cv-btn">Contact Us</a>
+                <a href="login.html" id="login">Log in</a>
+            </div>
+        </nav>
+    </header>
+
+    <form action="#">
+        <div class="container">
+            <!-- left -->
+            <div class="left">
+                <div class="inputImage">
+                    <div class="image">
+                        <img src="/images/defaultPhoto.png" alt="profile photo">
+                        <label for="imagePath">
+                            <span class="material-symbols-outlined">add_a_photo</span>
+                        </label>
+                        <input type="file" accept="image/jpeg, image/png, image/jpg" id="imagePath" class="userPic">
+                    </div>
+                </div>
+                <div class="aboutMe">
+                    <h1 class="leftHeading">About Me</h1>
+                    <input type="text" placeholder="About Me">
+                </div>
+                <div class="inputContactDetails">
+                    <div class="location">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <input type="text" id="location" placeholder="Location" autocomplete="off">
+                    </div>
+                    <div class="phone">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <input type="tel" id="phone" placeholder="Phone" autocomplete="off">
+                    </div>
+                    <div class="email">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <input type="email" id="email" placeholder="Email" autocomplete="off">
+                    </div>
+                    <div class="socialUrl">
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <input type="url" id="socialUrl" placeholder="Linkedin" autocomplete="off">
+                    </div>
+                </div>
+                <!-- objective -->
+                <div class="objective">
+                    <h1>Objective</h1>
+                    <div class="inputObjective">
+                        <!-- <input type="text" id="objective" placeholder="Briefly explain you're objective." autocomplete="off"> -->
+                         <textarea id="" placeholder="Briefly explain you're objective." autocomplete="off" rows="5" cols="45" maxlength="230"></textarea>
+                    </div>
+                </div>
+                <!-- skills -->
+                <div class="skills">
+                    <h1 >Skills</h1>
+                    <!-- <span class="extraInput"><img class="add" src="/images/add.png" alt="Add button"><img class="delete" src="/images/trash.png" alt="Delete button"></span> -->
+                    <div class="inputSkills">
+                        <input type="text" id="skills" placeholder="Your Skills" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+
+            <!-- right -->
+            <div class="right">
+                <div class="inputName">
+                    <input type="text" id="name" placeholder="Your Name" autocomplete="off">
+                </div>
+                <div class="inputRole">
+                    <input type="text" id="role" placeholder="The role you are applying for" autocomplete="off">
+                </div>
+
+                <!-- experience -->
+                <div class="experience">
+                    <div class="rightHeading">
+                    <h1>Experience</h1>
+                    <!-- <span class="extraInput"><img class="add experienceAdd" src="/images/add.png" alt="Add button"><img class="delete experienceDelete" src="/images/trash.png" alt="Delete button"></span> -->
+                    <span class="line"></span>
+                    </div>
+                    <div class="inputExperience">
+                        <div class="column">
+                            <div class="row">
+                                <input type="text" id="comanyName" placeholder="Company Name" autocomplete="off">
+                                <input type="text" id="location" placeholder="Location" autocomplete="off">
+                            </div>
+                            <div class="row">
+                                <input type="text" id="companytitle" placeholder="Title" autocomplete="off">
+                                <input type="text" id="experienceTimePeriod" placeholder="Time Period" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- education -->
+                <div class="education">
+                    <div class="rightHeading">
+                    <h1>Education</h1>
+                    <!-- <span class="extraInput"><img class="add" src="/images/add.png" alt="Add button"><img class="delete" src="/images/trash.png" alt="Delete button"></span> -->
+                    <span class="line"></span>
+                </div>
+                    <div class="inputEducation">
+                        <div class="column">
+                            <div class="row">
+                                <input type="text" id="institution" placeholder="School or University" autocomplete="off">
+                            </div>
+                            <div class="row">
+                                <input type="text" id="degree" placeholder="Field of study" autocomplete="off">
+                                <input type="num" id="studytimeperiod" placeholder="Completion year" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- project -->
+                <div class="project">
+                    <div class="rightHeading">
+                    <h1>Project</h1>
+                    <!-- <span class="extraInput"><img class="add" src="/images/add.png" alt="Add button"><img class="delete" src="/images/trash.png" alt="Delete button"></span> -->
+                    <span class="line"></span>
+                </div>
+                    <div class="inputProject column">
+                        <input type="text" id="projectTitle" placeholder="Title" autocomplete="off">
+                        <input type="text" id="projectSummary" placeholder="Description of project" autocomplete="off">
+                    </div>
+                </div>
+                <!-- achievements -->
+                <div class="achievements">
+                    <div class="rightHeading">
+                    <h1>Achievements</h1>
+                    <!-- <span class="extraInput"><img class="add" src="/images/add.png" alt="Add button"><img class="delete" src="/images/trash.png" alt="Delete button"></span> -->
+                    <span class="line"></span>
+                </div>
+                    <div class="inputAchievements">
+                        <div class="column">
+                            <div class="row">
+                                <input type="text" id="achievementTitle" placeholder="Your Achievement" autocomplete="off">
+                                <input type="num" id="achievementDate" placeholder="Year acquired" autocomplete="off">
+                            </div>
+                            <div class="row">
+                                <input type="text" id="achievementSummary" placeholder="Describe what you did and impact it had." autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- submit or Clear -->
+                <div class="submitBtn">
+                    <input class="clear" type="reset" value="Clear">
+                    <input class="submit" type="submit" value="Submit">
+                </div>
+            </div>
+        </div>
+        </div>
+    </form>
+    <script>
+        const profilePic = document.querySelector(".image img");
+        const userPic = document.querySelector(".userPic");
+        
+        userPic.onchange = function() {
+            profilePic.src = URL.createObjectURL(userPic.files[0]);
+        }
+    </script>
+</body>
+
+</html>

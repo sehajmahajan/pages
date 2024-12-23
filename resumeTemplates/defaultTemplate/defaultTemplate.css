@@ -1,0 +1,273 @@
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+/*Navbar*/
+
+header {
+    font-family: 'Montserrat', sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #F5F5F5;
+    /* background: #fff; */
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1); 
+}
+
+.logo span{
+    color: #181BED;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-left: 20px;
+    font-family: "Chelsea Market", system-ui;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    padding-top: 7px;
+}
+
+
+.nav-links a:hover {
+    color: #fdb813;
+}
+
+#select-grp{
+    background-color: #fff;
+    border: 2px solid #6c63ff;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    appearance: none;
+    text-align: center;
+    
+}
+
+#login, #cv-btn {
+    padding: 6px 11px;
+    border-radius: 10px;
+}
+
+
+#cv-btn {
+    background-color: #fff;
+    border: 2px solid #6c63ff;
+    color: #000;
+}
+
+#cv-btn:hover {
+    background-color: #6c63ff;
+    color: #fff;
+    border: 2px solid #181BED;
+}
+
+#login {
+    background-color: #6c63ff;
+    border: 2px solid #181BED;
+    color: #fff;
+}
+
+#login:hover {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #6c63ff;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #000;
+    margin: 4px 0;
+}
+
+form{
+    padding: 110px 10px;
+    background-color: #F5F5F5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 70%;
+    border: 1px solid black;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.inputPersonalDetails {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputContactDetails {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    background-color: #000;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.summary {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.alignHeadingCenter {
+    align-self: center;
+    margin-bottom: 0px;
+}
+
+.inputSummary input {
+    width: 100%;
+}
+
+
+.experience {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.education {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.project {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.achievements {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.skills {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    field-sizing: content;
+    background-color: #fff;
+    border: none;
+    transition: border-bottom 0.0s ease-in-out;
+    padding: 5px 3px;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.extraInput :first-child {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    float: left;
+    /* position: relative;
+    bottom: -10px; */
+}
+
+.extraInput :nth-last-child(1){
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    float: right;
+}
+
+.submitBtn {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 10px;
+}
+
+.submit {
+    height: 50px;
+    width: 70px;
+    background-color: #6c63ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.clear {
+    height: 50px;
+    width: 70px;
+    background-color: #6c63ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+
